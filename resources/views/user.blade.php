@@ -13,10 +13,12 @@
             <div class="col-md-12">
                 <div class="page-header">
                     <h1>
-                        Busqueda de usuarios
+                        Busca de usuarios
                         {{ Form::open(['route' => 'users', 'method' => 'GET', 'class' => 'form-inline pull-right']) }}
-                            <div class="form-group">
-                                {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nombre']) }}
+                            
+                        <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="nome" >
+                        {{ Form::text('name', null, ['class' => 'form-control', 'placeholder' => 'Nome']) /*testar sem esse metodo*/ }}
                             </div>
                             <div class="form-group">
                                 {{ Form::text('email', null, ['class' => 'form-control', 'placeholder' => 'Email']) }}

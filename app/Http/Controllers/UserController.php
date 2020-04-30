@@ -17,7 +17,7 @@ class UserController extends Controller
     		->name($name)
     		->email($email)
     		->bio($bio)
-    		->paginate(4);
+    		->paginate(3);
 
     	return view('user', compact('users'));
     }
